@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBuddy AI - Your Learning Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="logo">✨ EduBuddy AI</div>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#" onclick="navigateTo('about')">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- State Circles -->
+            <div class="state-circles">
+                <div class="state-circle telangana"><div class="circle-label">Telangana</div></div>
+                <div class="state-circle ap"><div class="circle-label">Andhra Pradesh</div></div>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-icon">✨</div>
+                <h1 class="main-title">AI Learning Platform</h1>
+                <p class="subtitle">Your intelligent companion for academic excellence</p>
+            </div>
+
+            <!-- Modules Grid -->
+            <div class="modules-grid">
+                <div class="module-card card-blue" onclick="openModule('class510', '5-10 Class')"><div class="card-header"><div class="card-icon">📚</div><div class="region-tag">Telangana</div></div><h3 class="card-title">5-10 Class</h3><p class="card-description">Foundation & Board Exams</p></div>
+                <div class="module-card card-magenta" onclick="openModule('class1112', '11-12 Class')"><div class="card-header"><div class="card-icon">🎓</div><div class="region-tag">Telangana</div></div><h3 class="card-title">11-12 Class</h3><p class="card-description">JEE, NEET, Boards & More</p></div>
+                <div class="module-card card-orange" onclick="openModule('btech', 'BTech')"><div class="card-header"><div class="card-icon">💻</div><div class="region-tag">Telangana</div></div><h3 class="card-title">BTech</h3><p class="card-description">Engineering & Tech Courses</p></div>
+                <div class="module-card card-green" onclick="openModule('stateexams', 'State Govt Exams')"><div class="card-header"><div class="card-icon">🏛️</div><div class="region-tag">Telangana</div></div><h3 class="card-title">State Govt Exams</h3><p class="card-description">Telangana & AP Exams</p></div>
+                <div class="module-card card-purple" onclick="openModule('centralexams', 'Central Govt Exams')"><div class="card-header"><div class="card-icon">🏢</div><div class="region-tag">Telangana</div></div><h3 class="card-title">Central Govt Exams</h3><p class="card-description">UPSC, SSC, Railways & More</p></div>
+                <div class="module-card card-cyan" onclick="openModule('transportfacility', 'Transport Facility')"><div class="card-header"><div class="card-icon">🚌</div><div class="region-tag">Telangana</div></div><h3 class="card-title">Transport Facility</h3><p class="card-description">Bus Timing & Route Planner</p></div>
+                <div class="module-card card-green-light" onclick="openModule('financialguidance', 'Financial Guidance')"><div class="card-header"><div class="card-icon">💳</div><div class="region-tag">Telangana</div></div><h3 class="card-title">Financial Guidance</h3><p class="card-description">Budget & Fee Planning</p></div>
+                <div class="module-card card-pink" onclick="openModule('healthdiet', 'Health & Diet Planner')"><div class="card-header"><div class="card-icon">❤️</div><div class="region-tag">Telangana</div></div><h3 class="card-title">Health & Diet Planner</h3><p class="card-description">Personalized Diet Plans</p></div>
+                <div class="module-card card-yellow" onclick="openModule('timemanagement', 'Time Management')"><div class="card-header"><div class="card-icon">⏰</div><div class="region-tag">Telangana</div></div><h3 class="card-title">Time Management</h3><p class="card-description">Game Schedule Planner</p></div>
+                <div class="module-card card-cyan-light" onclick="openModule('organizenotes', 'Organize Notes')"><div class="card-header"><div class="card-icon">📝</div><div class="region-tag">Telangana</div></div><h3 class="card-title">Organize Notes</h3><p class="card-description">AI Summaries from Videos/Files</p></div>
+                <div class="module-card card-lavender" onclick="openModule('dashboard', 'Personal Dashboard')"><div class="card-header"><div class="card-icon">📊</div><div class="region-tag">Telangana</div></div><h3 class="card-title">Personal Dashboard</h3><p class="card-description">Track Progress & Analysis</p></div>
+            </div>
+        </div>
+
+        <!-- Module Detail Page -->
+        <div id="module-page" class="page">
+            <div class="module-detail-container">
+                <button class="back-btn" onclick="navigateTo('home')">← Back to Home</button>
+                <div id="module-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
